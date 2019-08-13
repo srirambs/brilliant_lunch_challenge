@@ -1,0 +1,6 @@
+{
+    "host":"localhost",
+    "db": "brilliant_schema",
+    "user": "root",
+    "password": "ro0t"
+}
