@@ -42,7 +42,7 @@ Following are the assumptions made:
 ### 1) User API Details:
 **For Getting User Details**
 
-   **URL**: http://localhost:5030/user/{id}   
+   **URL**: http://localhost:5030/user/{user_id}   
    **Method**: GET
    
 **For Creating User**
