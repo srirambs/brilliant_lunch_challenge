@@ -37,3 +37,72 @@ Following are the assumptions made:
  - mysql: library that facilitates connection and querying Database
  - winston: Library to help create customized logger based on requirement.
 
+## API Details
+
+### 1) User API Details:
+**For Getting User Details**
+
+   **URL**: http://localhost:5030/user/{id}   
+   **Method**: GET
+   
+**For Creating User**
+
+   **URL**: http://localhost:5030/user/create   
+   **Method**: POST   
+   **Request Body:**
+   
+
+    {
+        "FName": "abcdef",
+        "LName": "ghijklm",
+        "CompanyId": 1,
+        "RoleId": 1,
+        "Email": "abcdef@test.com",
+        "SignUpTime": "2019-08-12",
+        "Password":"xxxxxxxxx"
+    }
+
+**For verifying User with Email**
+
+   **URL**: http://localhost:5030/user/verify   
+   **Method**: POST   
+   **Request Body:**
+   
+    {
+		"Email": "abcdef@test.com"
+	}
+
+### 2) Organization API Details:
+**For Getting Organization Details**
+
+   **URL**: http://localhost:5030/organization/{organization_id}   
+   **Method**: GET
+   
+**For Creating Organization**
+
+   **URL**: http://localhost:5030/organization/create   
+   **Method**: POST   
+   **Request Body:**
+   
+
+    {
+        "orgName": "abc co"
+    }
+
+
+### 3) Role API Details:
+**For Getting Organization Details**
+
+   **URL**: http://localhost:5030/role/{role_id}   
+   **Method**: GET
+   
+**For Creating Organization**
+
+   **URL**: http://localhost:5030/role/create   
+   **Method**: POST   
+   **Request Body:**
+   
+
+    {
+        "roleName": "abc user"
+    }
